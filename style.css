@@ -1,0 +1,85 @@
+body {
+    min-height: 100vh;
+    display: flex; /* لازم است تا main را در مرکز صفحه قرار دهیم */
+    justify-content: center;
+    align-items: center;
+    background-color: #f0f0f0;
+    margin: 0;
+}
+
+/* ۱. استایل اصلی (Container) - برای نمایش کارت‌ها به صورت افقی */
+#playing-cards {
+    /* تست‌های ۸، ۹، ۱۰، و ۱۱ */
+    display: flex;
+    justify-content: center; /* مرکز افقی */
+    align-items: center; /* مرکز عمودی (به دلیل body) */
+    flex-wrap: wrap; /* برای اینکه اگر فضای کافی نباشد، به خط بعدی بروند */
+    gap: 20px; /* ۲۰ پیکسل فاصله بین کارت‌ها */
+    
+    /* تنظیمات اضافی برای نمایش بهتر در صورت بزرگتر شدن صفحه */
+    width: 90%; 
+    padding: 20px;
+}
+
+/* ۲. استایل کارت‌ها (.card) */
+.card {
+    /* تست ۳: عرض و ارتفاع الزامی است */
+    width: 150px; 
+    height: 220px;
+    background-color: white;
+    border: 1px solid #333;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.2);
+    padding: 10px;
+    
+    /* تست ۱۲ و ۱۳: Flexbox در داخل کارت برای توجیه محتوا */
+    display: flex;
+    flex-direction: column; /* برای اینکه left, middle, right عمودی در کنار هم باشند */
+    justify-content: space-between; /* توزیع فضای بین فرزندان (left, middle, right) */
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+}
+
+/* ۳. استایل المان .left (بالا سمت چپ) */
+.left {
+    /* تست ۱۴: تراز به بالا (Flex-start) */
+    align-self: flex-start;
+    font-weight: bold;
+    line-height: 0.9;
+}
+
+/* ۴. استایل المان .middle (وسط کارت) */
+.middle {
+    /* تست ۱۵: تراز به مرکز */
+    align-self: center;
+    
+    /* تست ۱۷ و ۱۸: Flexbox داخلی برای نمایش محتوا به صورت ستونی */
+    display: flex; 
+    flex-direction: column; /* نمایش عمودی محتوای داخل middle */
+    justify-content: center;
+    align-items: center;
+    font-size: 80px; /* بزرگتر کردن کاراکتر اصلی */
+}
+
+/* ۵. استایل المان .right (پایین سمت راست) */
+.right {
+    /* تست ۱۶: تراز به پایین (Flex-end) */
+    align-self: flex-end;
+    font-weight: bold;
+    line-height: 0.9;
+    
+    /* چرخاندن محتوای پایین کارت برای شبیه‌سازی کارت واقعی */
+    transform: rotate(180deg); 
+}
+
+/* برای رنگی کردن خال‌های دل و خشت */
+.card:nth-child(2) .left,
+.card:nth-child(2) .right,
+.card:nth-child(2) .middle,
+.card:nth-child(3) .left,
+.card:nth-child(3) .right,
+.card:nth-child(3) .middle {
+    color: red;
+}
+
+
