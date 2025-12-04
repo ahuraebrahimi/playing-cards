@@ -29,5 +29,6 @@ Copy code
 - `.left` aligns start, `.middle` aligns center, `.right` aligns end  
 - Proper width, height, and flex-direction for all elements
 
-## Demo
-(Add GitHub Pages link if published)
+## 🔗 Demo
+View the project live on GitHub Pages:  
+[https://ahuraebrahimi.github.io/playing-cards/](https://ahuraebrahimi.github.io/playing-cards/)
