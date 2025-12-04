@@ -1,36 +1,33 @@
 # Playing Cards Page
 
-This project is a **playing cards page** built as part of the freeCodeCamp curriculum.  
-The page displays at least three cards using **HTML, CSS, and Flexbox**.
+A simple **playing cards page** built with HTML and CSS (Flexbox).  
+Displays multiple cards with left, middle, and right sections.
 
-## 📝 Features
-- Displays at least three playing cards  
-- Each card has three sections: left, middle, right  
+## Features
+- At least three playing cards  
 - Flexbox layout for cards and card elements  
-- Gap between cards and responsive design  
-- Middle section displays children in a column  
-- Optional: Use card symbols ♠, ♣, ♥, ♦
+- Responsive design with spacing between cards  
+- Middle section displays content in a column  
+- Card symbols: ♠, ♣, ♥, ♦
 
-## 🛠️ Technologies Used
+## Technologies
 - HTML5  
-- CSS3 (Flexbox)  
-- JavaScript (if used)  
+- CSS3 (Flexbox)
 
-## 📂 Folder Structure
+## Folder Structure
 playing-cards/
 ├─ index.html
 ├─ style.css
-├─ script.js
-└─ images/
+└─ README.md
 
-sql
+markdown
 Copy code
 
-## 🎯 User Stories
-- #playing-cards element uses flexbox  
-- Each .card uses flexbox with justify-content space-between  
-- .left aligns at start, .middle aligns at center, .right aligns at end  
+## User Stories
+- `#playing-cards` uses flexbox  
+- `.card` uses flexbox with `justify-content: space-between`  
+- `.left` aligns start, `.middle` aligns center, `.right` aligns end  
 - Proper width, height, and flex-direction for all elements
 
-## 🔗 Demo
+## Demo
 (Add GitHub Pages link if published)
